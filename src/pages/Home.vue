@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div class="h-10/12 bg-hero-pattern">
+    <div class="h-10/12">
       <navigation/>
       <banner class="pt-32" :property="bannerProperty"/>
     </div>
