@@ -8,10 +8,11 @@ module.exports = {
     extend: {
       fontFamily: {
         'sans': ['Berlin', 'Helvetica', 'Arial', 'sans-serif']
-      },
-      backgroundImage: theme => ({
-        'hero-pattern': "url('https://picsum.photos/1400/700')",
-      })
+      }
+      // ,
+      // backgroundImage: theme => ({
+      //   'hero-pattern': "url('https://picsum.photos/1400/700')",
+      // })
     },
     screens: {
       sm: '640px',
