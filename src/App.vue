@@ -1,8 +1,5 @@
 <template>
   <div id="app">
-    <div class="fb-customerchat"
-      page_id="101836985288902">
-    </div>
     <div class="mt-15">
       <router-view></router-view>
     </div>
