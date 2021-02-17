@@ -7,6 +7,16 @@ import router from './router'
 import '@/assets/css/tailwind.css'
 Vue.config.productionTip = false
 
+
+import { VueReCaptcha } from 'vue-recaptcha-v3'
+Vue.use(VueReCaptcha,{
+  siteKey: '6LeiElwaAAAAAAhGQiYX_Vzi4yZn346g7NefXurI',
+  loaderOptions: {
+    useRecaptchaNet: true
+  }
+})
+
+
 /* eslint-disable */
 new Vue({
   el: '#app',
