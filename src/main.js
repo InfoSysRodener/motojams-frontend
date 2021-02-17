@@ -12,7 +12,11 @@ import { VueReCaptcha } from 'vue-recaptcha-v3'
 Vue.use(VueReCaptcha,{
   siteKey: '6LeiElwaAAAAAAhGQiYX_Vzi4yZn346g7NefXurI',
   loaderOptions: {
-    useRecaptchaNet: true
+    useRecaptchaNet: true,
+    explicitRenderParameters:{
+      badge:'bottomleft',
+      size:'invisible'
+    }
   }
 })
 
