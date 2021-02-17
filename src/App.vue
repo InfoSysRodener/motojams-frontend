@@ -1,7 +1,7 @@
 <template>
   <div id="app">
     <div class="mt-15">
-      <router-view></router-view>
+      <router-view></router-view> 
     </div>
   </div>
 </template>
