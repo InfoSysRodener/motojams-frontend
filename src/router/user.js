@@ -1,7 +1,7 @@
 
-const UserAccount = () => import('@/pages/users/account');
-const UserAddress = () => import('@/pages/users/address');
-const UserOrders = () => import('@/pages/users/orders');
+const UserAccount = () => import('@/pages/users/Account');
+const UserAddress = () => import('@/pages/users/Address');
+const UserOrders = () => import('@/pages/users/Orders');
 
 export default [
     {
