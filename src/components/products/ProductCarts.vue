@@ -1,6 +1,6 @@
 <template>
     <div>
-        <div v-for="product in products" :key="product.id" class="flex justify-between py-3">
+        <div v-for="product in products" :key="product.id" class="flex justify-between py-3 select-none">
             <div class="flex">
                 <img  class="rounded-md w-16 h-16 sm:w-20 sm:h-20 md:w-26 md:h-26 object-fill" :src="product.image"/>
                 <div class="px-2 sm:mx-10">

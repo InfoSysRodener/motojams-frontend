@@ -74,7 +74,7 @@
                   <FormulateInput 
                       label="Password" 
                       name="passwords"
-                      type="text" 
+                      type="password" 
                       validation="^required|min:5,length|matches:/[0-9]/"
                       :validation-messages="{
                         matches: 'Password must contain at least number.'

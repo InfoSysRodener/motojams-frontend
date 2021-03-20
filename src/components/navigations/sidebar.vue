@@ -24,7 +24,7 @@
             :class="isOpen ? 'translate-x-0' : '-translate-x-full'"
         >
             <!-- sidebar body -->
-            <div class="flex flex-col items-center">
+            <div class="flex flex-col items-center select-none">
                 <img class="h-auto object-fill w-20 py-3 " src="@/assets/logoJams.png" alt="logo"/>
                 <div class="border w-full my-3 border-gray-200"></div>
                 <ul class="flex flex-col relative items-center w-full mt-3 active:bg-red">
@@ -34,7 +34,7 @@
                         :key="page.name"
                     >
                         <span>{{page.name}} </span>
-                    
+
                         <svg v-if="page.sublinks" fill="currentColor" viewBox="0 0 20 20" 
                             :class="{'rotate-180': hover == page.name, 'rotate-0': !hover == page.name}" 
                             class="inline float-right content-end w-4 h-4 mt-1 ml-1 transition-transform duration-200 transform md:-mt-1">
@@ -44,7 +44,7 @@
                         <div v-if="page.sublinks">
                             <ul  v-if="hover == page.name" class="z-50 pt-2">
                                     <li 
-                                        class="capitalize text-white text-sm " 
+                                        class="capitalize text-white text-sm select-none" 
                                         @mouseover="hover = page.name" v-for="sublink in page.sublinks"
                                         :key="sublink.name" 
                                     >

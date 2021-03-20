@@ -1,6 +1,6 @@
 <template>
   <nav @mouseenter="hover = null" 
-    class="bg-black py-3 border-b fixed border-white z-50 w-full">
+    class="bg-black py-3 border-b fixed border-white z-50 w-full select-none">
     <div class="flex items-center justify-between">
       <div @click="openSidebar" 
         class="block cursor-pointer ml-5"

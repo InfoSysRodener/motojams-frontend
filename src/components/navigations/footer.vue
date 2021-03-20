@@ -1,16 +1,13 @@
 <template>
-    <div class="h-auto border-t-2 border-white bg-black pb-1 pl-3 sm:px-10">
+    <div class="h-auto border-t-2 border-white bg-black pb-1 pl-3 sm:px-10 select-none">
       <div class="flex flex-col sm:flex-row justify-between mt-5 text-white pl-2" >
           <div class="sm:flex-grow">
             <img class="h-24" src="@/assets/logoJams.png"/>
             <p class="text-sm w-auto mr-5 sm:text-sm font-sans sm:w-2/4 break-words mt-5">
                 This Site is all about stuffs like Helmets together with Helmet Bags, Decals, Personalized Caps, Tube Masks, Tactical Bags    
-            </p>
-            <div>
-                <!-- <LeafMap /> -->
-            </div> 
+            </p> 
           </div>
-          <div class="grid grid-rows-1 sm:grid-cols-3 gap-2 md:gap-16 tracking-wider">
+          <div class="grid grid-rows-1 sm:grid-cols-3 gap-2 md:gap-16 tracking-wider select-none">
              <div v-for="item in items" :key="item.name">
                 <p class="font-black font-sans text-xs sm:text-sm my-5 mr-5 uppercase"> {{item.name}} </p>
                 <ul> 
@@ -35,11 +32,8 @@
     </div>
 </template>
 <script>
-import LeafMap from '../map.vue'
-
 export default {
     name:'footers',
-    components:{ LeafMap },
     data () {
         return {
             Lists:[
