@@ -1,9 +1,9 @@
 <template>
-    <div class="py-5 mx-5">
+    <div class="py-5 mx-5 md:mx-10">
           <p class="my-5 font-sans text-white capitalize text-2xl">{{ header }}</p>
           <div class="flex flex-row overflow-x-scroll lg:overflow-x-hidden pb-10">
-            <div class="mr-2 w-auto" v-for="property in products" :key="property.id" >
-                <product-item class="w-60 h-auto lg:w-full" :property="property" />
+            <div class="mr-2 w-auto" v-for="product in products" :key="product.id" >
+                <product-item class="w-40 h-auto lg:w-full" :item="product" />
             </div>
           </div>
       </div>
@@ -22,7 +22,7 @@
                 type:Array,
                 required:true
             }
-        },
+        }
     }
 </script>
 <style scoped>

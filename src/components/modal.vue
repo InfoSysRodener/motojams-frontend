@@ -25,6 +25,9 @@
 			modal: function(){
 			  document.documentElement.style.overflow = this.modal ? 'hidden' : 'auto';
 			}
+		},
+		beforeDestroy(){
+			document.documentElement.style.overflow = 'auto';
 		}
     }
 </script>

@@ -1,12 +1,12 @@
 <template>
-    <div>
+    <table>
         
-    </div>
+    </table>
 </template>
 <script>
 export default {
-    name:"check-out",
-    data () {
+    name:"product_table",
+    data() {
         return {
 
         }
